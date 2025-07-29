@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:retrofit/http.dart';
 
 class SocialButton extends StatelessWidget {
   final String buttonText;
@@ -12,10 +13,7 @@ class SocialButton extends StatelessWidget {
       width: screenWidth * 0.9,
       height: screenHeight * 0.06,
       child: ElevatedButton(
-        onPressed: () {
-          // Add your social login logic here
-          print("Social login button pressed");
-        },
+        onPressed: () {},
         style: ElevatedButton.styleFrom(
           backgroundColor: Color(0xFFF0F2F5), // Light gray background
           shape: RoundedRectangleBorder(
