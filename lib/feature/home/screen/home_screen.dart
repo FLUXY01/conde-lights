@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:get/get.dart';
 import 'package:latlong2/latlong.dart'; // don't forget this import!
+import 'package:zcorp_app_project/feature/light/screen/light_adjustment.dart';
 import '../controller/home_controller.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -27,7 +28,7 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.add, color: Colors.black, size: 30),
             onPressed: () {
-              // handle add icon press
+              Get.to(LivingRoomScreen());
             },
           ),
         ],
